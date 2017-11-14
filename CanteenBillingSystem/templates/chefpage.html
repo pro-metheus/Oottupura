@@ -1,0 +1,15 @@
+<html>
+<body>
+
+{%for customer in pending%}
+  {{customer}}
+  {%for product in pending.customer %}
+
+    <b>{{product}}</b>
+
+  {%endfor%}
+
+{%endfor%}
+
+</body>
+</html>
